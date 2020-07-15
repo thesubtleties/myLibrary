@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+}
+
+.addbookarea {
+    position: fixed;
+    text-align: center;
+    margin-left: 37.5vw;
+    margin-top: 37.5vh;
+    width: 25vw;
+    height: auto;
+    min-width: 250px;
+    background-color: rgba(253, 200, 95, .8);
+    z-index: 1000;
+    border-radius: 5px;
+    color: rgb(104, 104, 104);
+    display: none;
+}
+.bookareaheader {
+    font-size: 24px;
+    text-align: center;
+}
+.bookareaquestions {
+    margin-top: 5%;
+}
+.label {
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+}
+.labelcheck {
+    display: inline-block;
+}
+button#submit {
+    font-size: 22px;
+    font-weight: bold;
+    width: 75px;
+    height: 40px;
+    margin-bottom: 25px;
+    color: white;
+    background-color: rgb(60, 184, 35);
+    border-radius: 3px;
+    border: none;
+}
+button#submit:focus {
+    outline: none;
+}
+button#submit:hover {
+    background-color: rgb(90, 223, 73);
+}
+button#submit:active {
+    box-shadow: 0px 0px 6px rgb(9, 49, 9);
+}
+.form {
+    margin-top: 10px;
+}
+input {
+    display: inline-block;
+}
+.topArea {
+    width: 100%;
+    height: 20vh;
+    max-height: 20vh;
+    display: block;
+    position: fixed;
+}
+.spaceformenu {
+    width: 100%;
+    height: 20vh;
+    min-height: 220px;
+    display: block;
+}
+
+.sign {
+    background-color: rgba(253, 200, 95, .8);
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    width: 18%;
+    min-width: 205px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 30px 0px 30px 0px;
+    font-family: 'Fondamento';
+    border-radius: 4px;
+    text-shadow: 1px 1px 5px rgb(71, 71, 71);
+}
+
+.topbuttonarea {
+    height: 10%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.addremovebuttons {
+    padding: 5px 10px 5px 10px;
+    margin: 0 5px 0 5px;
+    width: 100px;
+    box-shadow: 1px 1px 6px rgb(206, 204, 204);
+    border-radius: 4px;
+    border: hidden;
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+}
+.addremovebuttons:active {
+    box-shadow: 3px 3px 6px rgb(206, 204, 204);
+    border: hidden;
+
+}
+.addremovebuttons:focus {
+    /*box-shadow: 1px 1px 6px rgb(77, 76, 76);*/
+    border: hidden;
+    outline: none;
+}
+
+#addbutton {
+    background-color: rgba(103, 226, 86, 1);
+    
+}
+#addbutton:hover {
+    background-color: rgba(103, 226, 86, 0.74);
+
+
+}
+#removebutton {
+    background-color: rgb(250, 102, 102);
+    
+}
+#removebutton:hover {
+    background-color: rgba(250, 102, 102, 0.74);
+    
+}
+
+.flex-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: stretch;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.book {
+    height: 250px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    border: 5px rgba(211, 96, 96, 0.432);
+    border-style: solid;
+    border-radius: 3px;
+    margin: 10px 10px 10px 10px;
+    flex-basis: auto;
+    flex-shrink: 3;
+    overflow: hidden;
+    position: relative;
+}
+div.read {
+    height: 250px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    border: 5px rgba(109, 211, 96, 0.432);
+    border-style: solid;
+    border-radius: 3px;
+    margin: 10px 10px 10px 10px;
+    flex-basis: auto;
+    flex-shrink: 3;
+    overflow: hidden;
+    position: relative;
+}
+
+.bookname {
+    font-size: 22px;
+    top: 35px;
+    left: 10px;
+    width: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px rgb(179, 179, 179);
+    display: block;
+    position: absolute;
+    
+}
+
+.bookinfo {
+    margin: 10px 10px 10px 10px;
+    width: 180px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    position: absolute;
+    top: 60px;
+}
+
+button.read {
+    position: absolute;
+    bottom: 10px;
+    height: 25px;
+    width: 85px;
+    margin-left: 57.5px;
+    font-size: 16px;
+    display: block;
+    background-color: rgba(0, 199, 0, 0.486);
+    border: none;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+button.read:hover {
+    background-color: rgba(0, 196, 0, 0.993);
+    border: hidden;
+    outline: none;
+}
+button.read:focus {
+    border: hidden;
+    outline: none;
+}
+button.read:active {
+    box-shadow: 0px 0px 10px rgb(117, 194, 117);
+    border: hidden;
+}
+button.unread {
+    position: absolute;
+    bottom: 10px;
+    height: 25px;
+    width: 85px;
+    margin-left: 57.5px;
+    font-size: 16px;
+    display: block;
+    background-color: rgba(199, 0, 0, 0.438);
+    border: none;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+button.unread:hover {
+    background-color: rgba(196, 0, 0, 0.733);
+    border: hidden;
+    outline: none;
+}
+button.unread:focus {
+    border: hidden;
+    outline: none;
+}
+button.unread:active {
+    box-shadow: 0px 0px 10px rgb(194, 117, 117);
+    border: hidden;
+}
+button#deletex {
+    bottom: 10px;
+    height: 25px;
+    width: 25px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(199, 0, 0);
+    border: none;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+button#deletex:hover {
+    background-color: rgba(196, 0, 0, 0.521);
+    border: hidden;
+    outline: none;
+}
+button#deletex:focus {
+    border: hidden;
+    outline: none;
+}
+button#deletex:active {
+    box-shadow: 0px 0px 10px rgb(194, 117, 117);
+    border: hidden;
+}
+
+.removebuttonholder {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    min-height: 25px;
+    display: none;
+}
+.removebuttonholderON {
+    text-align: right;
+    right: 2px;
+    top: 2px;
+    min-height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.bookareaxbuttonholder {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    min-height: 25px;
+}
+button#bookareax {
+    bottom: 10px;
+    height: 25px;
+    width: 25px;
+    font-size: 16px;
+    display: absolute;
+    background-color: rgb(199, 0, 0);
+    border: none;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+button#bookareax:hover {
+    background-color: rgba(196, 0, 0, 0.521);
+    border: hidden;
+    outline: none;
+}
+button#bookareax:focus {
+    border: hidden;
+    outline: none;
+}
+button#bookareax:active {
+    box-shadow: 0px 0px 10px rgb(194, 117, 117);
+    border: hidden;
+}
+/*.bookshelf {
+    background-color: gray;
+    box-shadow: 1px 1px 6px rgb(77, 76, 76);
+    
+}
+#bookshelf-top {
+    width: 100%;
+    min-height: 20px;
+    display: block;
+    margin-top: 30px;
+    z-index: 0;
+}
+#bookshelf-left {
+    min-width: 40px;
+    height: 78%;
+    position: absolute;
+    display: inline-block;
+}
+#bookshelf-right {
+    min-width: 40px;
+    height: 78%;
+    float: right;
+    position: absolute;
+    display: inline-block;
+} /*
